@@ -1,61 +1,104 @@
 ﻿<!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		
 		<style>
-		body{
-		background-color: rgb(119,4,37);
-		}
-		h1{
-		font-family:'Agency FB',"Microsoft JhengHei";
-		font-size:65px;
-		}
-		h2{
-		font-family:'Agency FB';
-		font-size:45px;
-		}
-		p{
-		font-family: 'Verdana', "DFKai-sb";
-		font-size:20px;
-		}
-		a{
-		font-size:18px;
-		background-color:white;
-		}
-		.normal-text{
-		color:white;
-		}
-		.link-text{
-		font-size:18px;
-		color:white;
-		font-family: Verdana;
-		}
-		.small-link-pics{
-		width:110px;
-		border-style: solid;
-		border-color: rgb(0,0,0);
-		border-width:3px;
-		}
-		.title-pics{
-		width:190px;
-		}
-		.origin-link{
-		font-size:15px;
-		background-color:white;
-		}
-		.origin-link-des{
-		font-size:15px;
-		font-color:white;
-		}
+			body{
+				background-color: rgb(119,4,37);
+			}
+			h1{
+				font-family:'Agency FB',"Microsoft JhengHei";
+				font-size:65px;
+			}
+			h2{
+				font-family:'Agency FB';
+				font-size:45px;
+			}
+			p{
+				font-family: 'Verdana', "DFKai-sb";
+				font-size:20px;
+			}
+			a{
+				font-size:18px;
+				background-color:white;
+			}
+			.normal-text{
+				color:white;
+			}
+			.link-text{
+				font-size:18px;
+				color:white;
+				font-family: Verdana;
+			}
+			.small-link-pics{
+				width:110px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
+			}
+			.link-pic-1{
+				width:160px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
+			}
+			.link-pic-2{
+				width:110px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
+			}
+			.link-pic-3{
+				width:160px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
+			}
+			.title-pics{
+				width:150px;
+			}
+			.origin-link{
+				font-size:15px;
+				background-color:white;
+			}
+			.origin-link-des{
+				font-size:15px;
+				font-color:white;
+			}
 		</style>
 	<title>Jason's Blog</title>
 </head>
 <body>
-	<h1 class="normal-text">Jason's Blog</h1>
-	<p class="link-text">Language: <a href="#">English</a> / <a href="./chinese.html">Tradtional Chinese</a></p>
-	<h2 class="normal-text">About me</h2><img class="title-pics" src="./AR15轉圈圈.gif">
-	<a class="origin-link" target="_blank" href="https://3.bp.blogspot.com/-QOaYZ8sc7d4/WSwmhS0lUpI/AAAAAAAABu4/O05bAkncluw5aHmB9Rz6k1zKal3OlIMOACLcB/s320/1492073661.gif">Original Link</a>
+	<div class = "container">
+		<div class = "row">
+			<div>
+				<h1 class="normal-text">Jason's Blog</h1>
+			</div>&nbsp;&nbsp;&nbsp;
+			<div>
+				<img class="title-pics" src="./AR15轉圈圈.gif">
+				<a class="origin-link" target="_blank" href="https://3.bp.blogspot.com/-QOaYZ8sc7d4/WSwmhS0lUpI/AAAAAAAABu4/O05bAkncluw5aHmB9Rz6k1zKal3OlIMOACLcB/s320/1492073661.gif">Origin Link</a>	
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
+				<p class="link-text">Language<br><a href="#">English</a> / <a href="./chinese.html">Tradtional Chinese</a></p>
+			</div>
+		</div>
+	</div>
+	<div class = "music container">
+		<audio id = "music" src = "" loop preload = "auto">
+			<button class = "playbutton btn" id = "ctl1">
+				<i class = "material-icons">play</i>
+			</button>
+			<button class = "pausebutton btn" id = "ctl2">
+				<i class = "material-icons">pause</i>
+			</button>
+		</audio>
 	<p class="normal-text">
 		Now lived in New Taipei City, Taiwan, having a simple life which most College students have.<br>
 		<br>I'm now just a first-grade college student in Fu Jen Catholic University, learning java coding, webpage coding skills and knowledge about Biomedical Informatics.<br>
@@ -64,25 +107,33 @@
 		<br>Also, my favorite sport is swimming, it makes me to forgot something that would depress me or something I would never want to memorize.<br>
 	</p>
 	<h2 class="normal-text">Personal Webpage Links</h2>
-		<p>
-			<p>
-				<img class="small-link-pics" src="./20170815_043505927_iOS.jpg" align="left">
+	<div class = "container">
+		<div class = "row">
+			<div>
+				<p>
+					<img class="small-link-pics link-pic-1" src="./20170815_043505927_iOS.jpg">
+				</p>
 				<a target="_blank" class="origin-link" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=64410670">Original Link(Rainbow6 in GFrontline)<br>
 				<a target="_blank" href="https://github.com/DD0s-JCN13">Github: DD0s-JCN13</a>
-			</p><br>
-			<br><p>
-				<img class="small-link-pics" src="./20170525_181629865_iOS.jpg" align="left">
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div>
+				<p>
+					<img class="small-link-pics link-pic-2" src="./20170525_181629865_iOS.jpg">
+				</p>
 				<a target="_blank" class="origin-link" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=60367904">Original Link(Girls FrontLine:Siege)</a><br>
 				<a target="_blank" href="https://www.youtube.com/channel/UCP5rLZelO45ExviiQ0JD68A?">Youtube: DD0s_JCN13 傑</a>
-			</p><br><br><br>
-			<br><br><p>
-				<img class="small-link-pics" src="./20180310_074425873_iOS.jpg" align="left">
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div>
+				<p>
+					<img class="small-link-pics link-pic-3" src="./20180310_074425873_iOS.jpg">
+				</p>
 				<a target="_blank" class="origin-link" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=67658799">Original Link(【Rkgk】罪深い人)</a><br>
 				<a target="_blank" href="https://r6db.com/player/d779530a-c3c4-40a9-93da-766729f5177b">Stats on Rainbow6</a>
-			</p><br>
-		</p>
-		<p class="normal-text">All pictures have their copyright, guiding to original websites (Links are next to pictures).</p>
-
-
+			</div>
+		</div>
+	</div>
+	<p class="normal-text">All pictures have their copyright, guiding to original websites (Links are next to pictures).</p>
+	<p class="normal-text">Last update date:15/04/2018</p>
+</body>
 
 
