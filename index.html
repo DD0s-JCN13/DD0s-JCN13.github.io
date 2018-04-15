@@ -2,12 +2,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		
 		<style>
 			body{
@@ -90,23 +90,45 @@
 			</div>
 		</div>
 	</div>
-	<div class = "music container">
-		<audio id = "music" src = "" loop preload = "auto">
-			<button class = "playbutton btn" id = "ctl1">
-				<i class = "material-icons">play</i>
-			</button>
-			<button class = "pausebutton btn" id = "ctl2">
-				<i class = "material-icons">pause</i>
-			</button>
-		</audio>
-	<p class="normal-text">
-		Now lived in New Taipei City, Taiwan, having a simple life which most College students have.<br>
-		<br>I'm now just a first-grade college student in Fu Jen Catholic University, learning java coding, webpage coding skills and knowledge about Biomedical Informatics.<br>
-		<br>However, I'm just a beginner in these field, which means I would make mistakes but still trying to solve it.<br>
-		<br>Personal hobbies are writing novels (in Chinese), listening to various type of music, playing <a target="_blank" href="https://rainbow6.ubisoft.com/siege/en-us/home/index.aspx">Rainbow6: Siege</a> on PC and some mobile games.<br>
-		<br>Also, my favorite sport is swimming, it makes me to forgot something that would depress me or something I would never want to memorize.<br>
-	</p>
-	<h2 class="normal-text">Personal Webpage Links</h2>
+	<div class = "container">
+		<div class = "row">
+			<div class = "music-container" style="position: absolute; max-width: 100%; display: block;">
+				<center>
+					<audio id = "music" src = "./03.m4a" loop preload = "auto"></audio>
+					<button class = "btn btn-primary" id = "ctl1">
+						<i class = "material-icons">play_arrow</i>
+					</button>
+					<button class = "btn btn-secondary" id = "ctl2">
+						<i class = "material-icons">pause</i>
+					</button>
+				</center>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
+				<p class="link-text">Now playing: Wait<br>Maroon 5 - Red Pill Blues</p>
+			</div>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
+			<h2 class="normal-text">Abuot Me</h2>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
+			<p class="normal-text">
+				Now lived in New Taipei City, Taiwan, having a simple life which most College students have.<br>
+				<br>I'm now just a first-grade college student in Fu Jen Catholic University, learning java coding, webpage coding skills and knowledge about Biomedical Informatics.<br>
+				<br>However, I'm just a beginner in these field, which means I would make mistakes but still trying to solve it.<br>
+				<br>Personal hobbies are writing novels (in Chinese), listening to various type of music, playing <a target="_blank" href="https://rainbow6.ubisoft.com/siege/en-us/home/index.aspx">Rainbow6: Siege</a> on PC and some mobile games.<br>
+				<br>Also, my favorite sport is swimming, it makes me to forgot something that would depress me or something I would never want to memorize.<br>
+			</p>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
+			<h2 class="normal-text">Personal Webpage Links</h2>
+		</div>
+	</div>
 	<div class = "container">
 		<div class = "row">
 			<div>
@@ -132,8 +154,30 @@
 			</div>
 		</div>
 	</div>
-	<p class="normal-text">All pictures have their copyright, guiding to original websites (Links are next to pictures).</p>
-	<p class="normal-text">Last update date:15/04/2018</p>
+	<div class = "container">
+		<div class = "row">
+			<p class="normal-text">All pictures have their copyright, guiding to original websites (Links are next to pictures).</p><br>
+			<p class="normal-text">Last update date:15/04/2018</p>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$("#music").each(function() {
+				this.play();
+				this.volume = 0.2;
+			});
+			$("#ctl1").on("click",function() {
+				$("#music").each(function() {
+				this.play();
+				});
+			});
+			$("#ctl2").on("click",function() {
+				$("#music").each(function() {
+				this.pause();
+				});
+			});
+		});
+	</script>
 </body>
 
 

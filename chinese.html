@@ -1,7 +1,13 @@
 ﻿<!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		
 		<style>
 			body{
@@ -19,7 +25,7 @@
 			}
 			p{
 				font-family: 'Verdana', "DFKai-sb";
-				font-size:18px;
+				font-size:20px;
 				color:white;
 			}
 			a{
@@ -30,48 +36,134 @@
 				border-style: solid;
 				border-color: rgb(0,0,0);
 				border-width:3px;
+			}}
+			.link-pic-1{
+				width:160px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
+			}
+			.link-pic-2{
+				width:110px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
+			}
+			.link-pic-3{
+				width:160px;
+				border-style: solid;
+				border-color: rgb(0,0,0);
+				border-width:3px;
 			}
 			.title-pics{
-				width:190px;
+				width:150px;
 			}
 		</style>
 	<title>Jason的部落格</title>
 </head>
 <body>
-	<h1>Jason的部落格</h1>
-	<p>語言： <a href="./index.html"><font face="Verdana">English</font></a> / <a href="#">繁體中文</a></p>
-
-
-	<h2>有關我自己</h2><img class="title-pics" src="./AR15轉圈圈.gif">
-	<a class="origin-link" target="_blank" href="https://3.bp.blogspot.com/-QOaYZ8sc7d4/WSwmhS0lUpI/AAAAAAAABu4/O05bAkncluw5aHmB9Rz6k1zKal3OlIMOACLcB/s320/1492073661.gif">圖源</a>
-	<p>
-	<br>現居於台灣新北市，過著普通大學生的生活<br>
-	<br>目前就讀於天主教輔仁大學，一年級，主要在學習java程式語言，各式網頁語法和有關醫學資訊的知識。<br>
-	<br>只不過自己在這些領域裡只是個初學者，也代表著我會犯錯，但我也會積極去學習改正。<br>
-	<br>我的休閒興趣有：寫小說（中文小說）、聽各式各樣的音樂、在電腦上玩 <a href="http://www.ubisoft.com.tw/r6s/" target="_blank">虹彩六號：圍攻行動</a>和玩手機遊戲。<br>
-	<br>至於我最喜歡也最擅長的運動是游泳，藉由這個運動，我可以忘掉那些讓我不愉快的事物。<br>
-	</p>
-	<h2>個人網站連結</h2>
-		<p>
+	<div class = "container">
+		<div class = "row">
+			<div>
+				<h1>Jason的部落格</h1>
+			</div>&nbsp;&nbsp;&nbsp;
+			<div>
+				<img class="title-pics" src="./AR15轉圈圈.gif">
+				<a class="origin-link" target="_blank" href="https://3.bp.blogspot.com/-QOaYZ8sc7d4/WSwmhS0lUpI/AAAAAAAABu4/O05bAkncluw5aHmB9Rz6k1zKal3OlIMOACLcB/s320/1492073661.gif">圖源</a>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
+				<p>語言<br><a href="./index.html"><font face="Verdana">English</font></a> / <a href="#">繁體中文</a></p>
+			</div>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
+			<div class = "music-container" style = "position: absolute; max-width: 100%; display: block;">
+				<center>
+					<audio id = "music" src = "./03.m4a" loop preload = "auto"></audio>
+					<button class = "btn btn-primary" id = "ctl1">
+						<i class = "material-icons">play_arrow</i>
+					</button>
+					<button class = "btn btn-secondary" id = "ctl2">
+						<i class = "material-icons">pause</i>
+					</button>
+				</center>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
+				<p class="link-text">現正播放： Wait<br>Maroon 5 - Red Pill Blues（紅藍藥丸）</p>
+			</div>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">			
+			<h2>有關我自己</h2>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
 			<p>
-				<img class="small-link-pics" src="./20170815_043505927_iOS.jpg" align="left">
+				現居於台灣新北市，過著普通大學生的生活<br>
+				<br>目前就讀於天主教輔仁大學，一年級，主要在學習java程式語言，各式網頁語法和有關醫學資訊的知識。<br>
+				<br>只不過自己在這些領域裡只是個初學者，也代表著我會犯錯，但我也會積極去學習改正。<br>
+				<br>我的休閒興趣有：寫小說（中文小說）、聽各式各樣的音樂、在電腦上玩 <a href="http://www.ubisoft.com.tw/r6s/" target="_blank">虹彩六號：圍攻行動</a>和玩手機遊戲。<br>
+				<br>至於我最喜歡也最擅長的運動是游泳，藉由這個運動，我可以忘掉那些讓我不愉快的事物。<br>
+			</p>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
+			<h2>個人網站連結</h2>
+		</div>
+	</div>		
+	<div class = "container">
+		<div class = "row">
+			<div>
+				<p>
+					<img class="small-link-pics link-pic-1" src="./20170815_043505927_iOS.jpg" style="width:160px">
+				</p>
 				<a target="_blank" class="origin-link" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=64410670">圖源(Rainbow6 in GFrontline)<br>
 				<a target="_blank" href="https://github.com/DD0s-JCN13">Github: DD0s-JCN13</a>
-			</p><br>
-			<br><p>
-				<img class="small-link-pics" src="./20170525_181629865_iOS.jpg" align="left">
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div>
+				<p>
+					<img class="small-link-pics link-pic-2" src="./20170525_181629865_iOS.jpg" >
+				</p>
 				<a target="_blank" class="origin-link" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=60367904">圖源(Girls FrontLine:Siege)</a><br>
 				<a target="_blank" href="https://www.youtube.com/channel/UCP5rLZelO45ExviiQ0JD68A?">Youtube: DD0s_JCN13 傑</a>
-			</p><br><br><br>
-			<br><br><p>
-				<img class="small-link-pics" src="./20180310_074425873_iOS.jpg" align="left">
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div>
+				<p>
+					<img class="small-link-pics link-pic-3" src="./20180310_074425873_iOS.jpg" >
+				</p>
 				<a target="_blank" class="origin-link" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=67658799">圖源(【Rkgk】罪深い人)</a><br>
 				<a target="_blank" href="https://r6db.com/player/d779530a-c3c4-40a9-93da-766729f5177b">Stats on Rainbow6</a>
-			</p><br>
-		</p>
-		<p class="normal-text">每張圖片都有著作權，附上連結導向原始出處（連結於圖片旁）。</p>
+			</div>
+		</div>
+	</div>
+	<div class = "container">
+		<div class = "row">
+		<p class="normal-text">每張圖片都有著作權，附上連結導向原始出處（連結於圖片旁）。</p><br>
 		<p class="normal-text">最後更新時間：15/04/2018</p>
-
-
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$("#music").each(function() {
+				this.play();
+				this.volume = 0.2;
+			});
+			$("#ctl1").on("click",function() {
+				$("#music").each(function() {
+				this.play();
+				});
+			});
+			$("#ctl2").on("click",function() {
+				$("#music").each(function() {
+				this.pause();
+				});
+			});
+		});
+	</script>
+</body>
 
 
